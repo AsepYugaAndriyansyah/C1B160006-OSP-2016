@@ -1,0 +1,14 @@
+uses crt;
+var 
+  n, m : longint; 
+  jumlah : int64; 
+begin 
+  readln(n, m); 
+  while (n > 0) or (m > 0) do 
+  begin 
+    jumlah := jumlah + n*m; 
+    dec(n); dec(m); 
+  end; 
+  writeln(jumlah);
+  readln;
+end.

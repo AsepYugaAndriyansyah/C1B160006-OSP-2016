@@ -1,0 +1,14 @@
+uses crt;
+function Proses (x : integer): integer;
+begin
+if(x <= 1) then Proses := x
+else Proses := Proses(x div 2 * x mod 2) + Proses(x div 2 + x mod 2);
+end;
+
+var x :integer;
+begin
+read(x);
+x := proses(x);
+write(x);
+readkey;
+end.
